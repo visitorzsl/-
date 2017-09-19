@@ -16,6 +16,8 @@
 		E024F0811F70A8BB007F805C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E024F07F1F70A8BB007F805C /* LaunchScreen.storyboard */; };
 		E024F08C1F70A8BB007F805C /* GCDTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E024F08B1F70A8BB007F805C /* GCDTests.m */; };
 		E024F0971F70A8BC007F805C /* GCDUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = E024F0961F70A8BC007F805C /* GCDUITests.m */; };
+		E0E0676C1F70EE56009C7487 /* ZSLCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E0E0676A1F70EE56009C7487 /* ZSLCell.m */; };
+		E0E0676D1F70EE56009C7487 /* ZSLCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E0E0676B1F70EE56009C7487 /* ZSLCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,9 @@
 		E024F0921F70A8BC007F805C /* GCDUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GCDUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E024F0961F70A8BC007F805C /* GCDUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GCDUITests.m; sourceTree = "<group>"; };
 		E024F0981F70A8BC007F805C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E0E067691F70EE56009C7487 /* ZSLCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZSLCell.h; sourceTree = "<group>"; };
+		E0E0676A1F70EE56009C7487 /* ZSLCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZSLCell.m; sourceTree = "<group>"; };
+		E0E0676B1F70EE56009C7487 /* ZSLCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZSLCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +112,9 @@
 				E024F0721F70A8BB007F805C /* AppDelegate.m */,
 				E024F0741F70A8BB007F805C /* ViewController.h */,
 				E024F0751F70A8BB007F805C /* ViewController.m */,
+				E0E067691F70EE56009C7487 /* ZSLCell.h */,
+				E0E0676A1F70EE56009C7487 /* ZSLCell.m */,
+				E0E0676B1F70EE56009C7487 /* ZSLCell.xib */,
 				E024F0771F70A8BB007F805C /* Main.storyboard */,
 				E024F07D1F70A8BB007F805C /* Assets.xcassets */,
 				E024F07F1F70A8BB007F805C /* LaunchScreen.storyboard */,
@@ -210,6 +218,7 @@
 				TargetAttributes = {
 					E024F06A1F70A8BB007F805C = {
 						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = ZT78526TWE;
 						ProvisioningStyle = Automatic;
 					};
 					E024F0861F70A8BB007F805C = {
@@ -250,6 +259,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E024F0811F70A8BB007F805C /* LaunchScreen.storyboard in Resources */,
+				E0E0676D1F70EE56009C7487 /* ZSLCell.xib in Resources */,
 				E024F07E1F70A8BB007F805C /* Assets.xcassets in Resources */,
 				E024F0791F70A8BB007F805C /* Main.storyboard in Resources */,
 			);
@@ -278,6 +288,7 @@
 			files = (
 				E024F0761F70A8BB007F805C /* ViewController.m in Sources */,
 				E024F0731F70A8BB007F805C /* AppDelegate.m in Sources */,
+				E0E0676C1F70EE56009C7487 /* ZSLCell.m in Sources */,
 				E024F07C1F70A8BB007F805C /* GCD.xcdatamodeld in Sources */,
 				E024F0701F70A8BB007F805C /* main.m in Sources */,
 			);
@@ -430,7 +441,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = ZT78526TWE;
 				INFOPLIST_FILE = GCD/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = miss.GCD;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -441,7 +454,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = ZT78526TWE;
 				INFOPLIST_FILE = GCD/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = miss.GCD;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -513,6 +528,7 @@
 				E024F09D1F70A8BC007F805C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E024F09E1F70A8BC007F805C /* Build configuration list for PBXNativeTarget "GCDTests" */ = {
 			isa = XCConfigurationList;
@@ -521,6 +537,7 @@
 				E024F0A01F70A8BC007F805C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E024F0A11F70A8BC007F805C /* Build configuration list for PBXNativeTarget "GCDUITests" */ = {
 			isa = XCConfigurationList;
@@ -529,6 +546,7 @@
 				E024F0A31F70A8BC007F805C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
